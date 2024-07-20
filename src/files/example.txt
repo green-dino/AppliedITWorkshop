@@ -1,0 +1,5 @@
+this is an example text file. It contains some sample text that you can use
+for various purposes such as testing, documentation, or data analysis. You
+can modify the contents of this file to suit your specific needs. Remember
+to save it with the `.txt` extension so that it's easily recognized as a
+plain text file by other applications and systems that support this format.
