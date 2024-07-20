@@ -6,6 +6,7 @@ __pycache__/
 # Distribution / packaging
 .Python
 env/
+ven/
 build/
 dist/
 *.egg-info/
