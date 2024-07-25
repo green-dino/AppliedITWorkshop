@@ -8,6 +8,7 @@ for bird in birds:
     bird.eat()
     # The class of bird can do many things
     # Add a new behavior of the bird below 
-    # bird.flap_wing()
+    #bird.flap_wing()
     #run the script - what do you observe ? 
+
     

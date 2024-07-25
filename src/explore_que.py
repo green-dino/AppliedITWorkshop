@@ -10,6 +10,8 @@ line.enqueue(3)
 first_item = line.dequeue()
 print("First item dequeued:", first_item)
 
+
+
 [item for item in line]
 print(line)
 
