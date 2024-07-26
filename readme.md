@@ -30,7 +30,7 @@ The Applied IT Workshop is a comprehensive training program designed to enhance 
 
 #### Experience
 - Lessons Learned from Institutional IT Projects
-- Guest Speakers from Leading Institutions
+- Community Resources 
 - Group Projects and Presentations
 
 #### Training
