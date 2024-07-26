@@ -1,0 +1,1 @@
+Applied IT Workshop Outline and Readme 
