@@ -45,3 +45,11 @@ cat6 = {
     "age": 2,
     "personality": "Active and Social"
 }
+
+#make a LIST of the dictionary
+
+cats = [cat1, cat2, cat3, cat4, cat5, cat6]
+
+for cat in cats:
+    print(cat)
+    print("\n")
