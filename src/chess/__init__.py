@@ -4,7 +4,7 @@
 __author__ = "Rye"
 __email__ = "rye@grcand.me"
 __version__ = "0.1.0"
-__description__ = "a simple beautiful soup script"
+__description__ = "A chess game for logic"
 
 # Logging Configuration 
 import logging
