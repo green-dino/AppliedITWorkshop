@@ -1,15 +1,16 @@
 from typing import Dict
-from cat_data import Cat , cats
+from cat_data import Cat, cats
 from cat_main import display_cats, add_cat, remove_cat, update_cat, sort_cats_by_age
 
 # User command mapping
-COMMANDS : Dict[str, str] = {
+COMMANDS: Dict[str, str] = {
     "display": "display_cats",
     "add": "add_cat",
     "remove": "remove_cat",
     "update": "update_cat",
     "sort": "sort_cats_by_age",
 }
+
 
 def main():
     while True:
@@ -22,9 +23,9 @@ def main():
 
         user_input = input("Select and option: ").strip().lower()
 
-        if user_input == 'exit':
+        if user_input == "exit":
             break
-        
+
         try:
             func_name = COMMANDS.get(user_input, "")
             if func_name:
@@ -45,18 +46,30 @@ def main():
                     remove_cat(cats, name)
                 elif func_name == "update_cat":
                     name = input("Enter the name of the cat to update: ")
-                    breed = input("Enter the new breed (leave empty to keep current): ") or None
-                    color = input("Enter the new color (leave empty to keep current): ") or None
+                    breed = (
+                        input("Enter the new breed (leave empty to keep current): ")
+                        or None
+                    )
+                    color = (
+                        input("Enter the new color (leave empty to keep current): ")
+                        or None
+                    )
                     age = input("Enter the new age (leave empty to keep current): ")
                     age = int(age) if age else None
-                    personality = input("Enter the new personality (leave empty to keep current): ") or None
+                    personality = (
+                        input(
+                            "Enter the new personality (leave empty to keep current): "
+                        )
+                        or None
+                    )
                     update_cat(cats, name, breed, color, age, personality)
-                    
 
             # clear the console screen on exit
             print("\033c", end="")
-        
+
         except KeyError:
             print("Invalid Command. Try again.")
+
+
 if __name__ == "__main__":
     main()

@@ -1,4 +1,4 @@
-from collections import deque 
+from collections import deque
 from time import perf_counter
 
 # Define TIMES, which represents the number of times the function will beexecuted to calculate average time.
@@ -7,6 +7,7 @@ TIMES = 100_000
 # Initialize an empty list and deque data structures with the same name 'a'.
 a_list = []
 a_deque = deque()
+
 
 # Define a helper function named 'average_time' that takes in a function andnumber of times as arguments,
 # calculates the total time taken by executing the passed function 'times' number of times,
@@ -19,8 +20,9 @@ def average_time(func, times):
         total += (perf_counter() - start) * 1e9
     return total / times
 
+
 # Define two lambda functions to be passed as arguments to the 'average_time' function, one for list.insert() and another for deque.appendleft().
-list_time = average_time(lambda i: a_list.insert(0,i), TIMES)
+list_time = average_time(lambda i: a_list.insert(0, i), TIMES)
 deque_time = average_time(lambda i: a_deque.appendleft(i), TIMES)
 
 # Calculate the gain in performance of list.insert() over deque.appendleft() by dividing the time taken by list.insert() by the time taken by deque.appendleft().

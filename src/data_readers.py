@@ -2,10 +2,12 @@ import csv
 import json
 import logging
 
+
 def batched(iterable, n):
     """Helper function to split an iterable into batches of size n."""
     for i in range(0, len(iterable), n):
-        yield iterable[i:i+n]
+        yield iterable[i : i + n]
+
 
 class Reader:
     def __init__(self, filename):
@@ -13,6 +15,7 @@ class Reader:
 
     def read(self):
         raise NotImplementedError("Subclasses must implement this method")
+
 
 class TextReader(Reader):
     def read(self):
@@ -25,6 +28,7 @@ class TextReader(Reader):
         except Exception as e:
             logging.error(f"An error occurred while reading {self.filename}: {e}")
 
+
 class CSVReader(Reader):
     def read(self):
         try:
@@ -34,6 +38,7 @@ class CSVReader(Reader):
             logging.error(f"File not found: {self.filename}")
         except Exception as e:
             logging.error(f"An error occurred while reading {self.filename}: {e}")
+
 
 class JSONReader(Reader):
     def read(self):

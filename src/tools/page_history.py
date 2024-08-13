@@ -1,7 +1,7 @@
 from collections import deque
 
 # Define a tuple named 'sites', containing three string URLs.
-sites = ('google.com', 'yahoo.com', 'bing.com')
+sites = ("google.com", "yahoo.com", "bing.com")
 
 # Initialize an empty Deque named 'pages' with a maximum length of 5 elements, using the maxlen attribute provided by Deque.
 pages = deque(maxlen=5)

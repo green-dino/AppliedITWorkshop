@@ -1,12 +1,13 @@
 from knight import Knight
 
+
 class Board:
     """
-    The Board class is responsible for managing the overall state of the chessboard, 
-    including the placement and movement of pieces. It provides a context for the pieces 
+    The Board class is responsible for managing the overall state of the chessboard,
+    including the placement and movement of pieces. It provides a context for the pieces
     and their interactions.
     """
-    
+
     def __init__(self):
         """
         Initializes a Board object with pieces in their starting positions.

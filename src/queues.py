@@ -1,5 +1,6 @@
 from collections import deque
 
+
 class Queue:
     # Constructor to initialize an empty deque as the underlying storage
     def __init__(self):
@@ -12,7 +13,7 @@ class Queue:
     # Remove and return the element at the front of the queue using the pop() method with a left argument of 0 (first element) for deque
     def dequeue(self):
         return self._elements.popleft()
-    
+
     # Add an iterator using the built-in iter() function to return an iterator over the elements in the queue
     def __iter__(self):
         return iter(self._elements)

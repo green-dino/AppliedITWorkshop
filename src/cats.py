@@ -3,7 +3,7 @@ cat1 = {
     "breed": "Scottish Fold",
     "color": "Gray",
     "age": 4,
-    "personality": "Curious and Friendly"
+    "personality": "Curious and Friendly",
 }
 
 cat2 = {
@@ -11,7 +11,7 @@ cat2 = {
     "breed": "Russian Blue",
     "color": "Blue",
     "age": 6,
-    "personality": "Quiet and Affectionate"
+    "personality": "Quiet and Affectionate",
 }
 
 cat3 = {
@@ -19,7 +19,7 @@ cat3 = {
     "breed": "Sphynx",
     "color": "Pink",
     "age": 3,
-    "personality": "Energetic and Playful"
+    "personality": "Energetic and Playful",
 }
 
 cat4 = {
@@ -27,7 +27,7 @@ cat4 = {
     "breed": "Ragdoll",
     "color": "Seal Bicolor",
     "age": 5,
-    "personality": "Gentle and Laid-back"
+    "personality": "Gentle and Laid-back",
 }
 
 cat5 = {
@@ -35,7 +35,7 @@ cat5 = {
     "breed": "Savannah",
     "color": "Spotted Tabby",
     "age": 7,
-    "personality": "Adventurous and Intelligent"
+    "personality": "Adventurous and Intelligent",
 }
 
 cat6 = {
@@ -43,10 +43,10 @@ cat6 = {
     "breed": "Abyssinian",
     "color": "Ruddy",
     "age": 2,
-    "personality": "Active and Social"
+    "personality": "Active and Social",
 }
 
-#make a LIST of the dictionary
+# make a LIST of the dictionary
 
 cats = [cat1, cat2, cat3, cat4, cat5, cat6]
 

@@ -1,12 +1,13 @@
 from piece import Piece
 
+
 class Knight(Piece):
     """
-    The Knight class extends the Piece class and defines specific behaviors and attributes 
-    unique to the Knight piece. It includes methods for moving according to the rules of 
+    The Knight class extends the Piece class and defines specific behaviors and attributes
+    unique to the Knight piece. It includes methods for moving according to the rules of
     how Knights move in chess.
     """
-    
+
     def __init__(self, position, board):
         """
         Initializes a Knight object.

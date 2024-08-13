@@ -1,6 +1,7 @@
 from typing import List, Optional
-import json 
+import json
 from cat_data import Cat, cats
+
 
 def display_cats(cats: List[Cat]) -> None:
     """
@@ -14,6 +15,7 @@ def display_cats(cats: List[Cat]) -> None:
     """
     for cat in cats:
         print(cat)
+
 
 def find_cat_by_name(cats: List[Cat], name: str) -> Cat:
     """
@@ -31,7 +33,10 @@ def find_cat_by_name(cats: List[Cat], name: str) -> Cat:
             return cat
     raise ValueError(f"No cat found with name {name}")
 
-def add_cat(cats: List[Cat], name: str, breed: str, color: str, age: int, personality: str) -> None:
+
+def add_cat(
+    cats: List[Cat], name: str, breed: str, color: str, age: int, personality: str
+) -> None:
     """
     Adds a new Cat object to the given list.
 
@@ -49,7 +54,8 @@ def add_cat(cats: List[Cat], name: str, breed: str, color: str, age: int, person
     new_cat = Cat(name, breed, color, age, personality)
     cats.append(new_cat)
 
-def remove_cat(cats: List[Cat], name:str) -> None:
+
+def remove_cat(cats: List[Cat], name: str) -> None:
     """
     Removes a Cat object with the specified name from the given list.
 
@@ -65,9 +71,16 @@ def remove_cat(cats: List[Cat], name:str) -> None:
         cats.remove(cat)
     else:
         raise ValueError(f"No cat found with {name}")
-    
-def update_cat(cats: List[Cat], name: str, breed: Optional[str] = None, color: Optional[str] = None,
-              age: Optional[int] = None, personality: Optional[str] = None ) -> None:
+
+
+def update_cat(
+    cats: List[Cat],
+    name: str,
+    breed: Optional[str] = None,
+    color: Optional[str] = None,
+    age: Optional[int] = None,
+    personality: Optional[str] = None,
+) -> None:
     """
     Updates the attributes of a Cat object with the specified name in the given list.
 
@@ -94,6 +107,7 @@ def update_cat(cats: List[Cat], name: str, breed: Optional[str] = None, color: O
             cat.personality = personality
     else:
         raise ValueError(f"No cat found with {name}")
+
 
 def sort_cats_by_age(cats: List[Cat]) -> List[Cat]:
     """
